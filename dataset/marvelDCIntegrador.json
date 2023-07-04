@@ -1,0 +1,25 @@
+{
+	"name": "marvelDCIntegrador",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage_Franco",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "integradores"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "ctr1"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}

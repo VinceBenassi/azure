@@ -1,0 +1,75 @@
+{
+	"name": "marvelDC",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Sftp_Franco",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "colectores"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "SftpLocation",
+				"fileName": "marvel_dc_characters.csv",
+				"folderPath": "/home/fbenassi"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "ID",
+				"type": "String"
+			},
+			{
+				"name": "Name",
+				"type": "String"
+			},
+			{
+				"name": "Identity",
+				"type": "String"
+			},
+			{
+				"name": "Alignment",
+				"type": "String"
+			},
+			{
+				"name": "EyeColor",
+				"type": "String"
+			},
+			{
+				"name": "HairColor",
+				"type": "String"
+			},
+			{
+				"name": "Gender",
+				"type": "String"
+			},
+			{
+				"name": "Status",
+				"type": "String"
+			},
+			{
+				"name": "Appearances",
+				"type": "String"
+			},
+			{
+				"name": "FirstAppearance",
+				"type": "String"
+			},
+			{
+				"name": "Year",
+				"type": "String"
+			},
+			{
+				"name": "Universe",
+				"type": "String"
+			}
+		]
+	}
+}
